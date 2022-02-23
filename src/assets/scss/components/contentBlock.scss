@@ -1,0 +1,265 @@
+.product-card {
+    margin: 0 25px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 0px #999999;
+    padding-bottom: 10px;
+    cursor: pointer;
+    .product-image {
+        width: 100%;
+        min-height: 300px;
+        height: 20vw;
+
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+        position: relative;
+
+        .product-image-content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            img {
+                border-radius: 5px 5px 0px 0px;
+                height: auto;
+                width: 100%;
+                min-width: 100%;
+                position: absolute;
+                top: -9999px;
+                bottom: -9999px;
+                left: -9999px;
+                right: -9999px;
+                margin: auto;
+            }
+            .product-image-caption {
+                text-align: center;
+                display: grid;
+                height: 100%;
+                align-items: center;
+            }
+        }
+
+        .price-badge {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            width: fit-content;
+            font-family: 'Archivo';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 22px;
+            color: #ffffff;
+            background-color: #000000;
+            padding: 6px 10px;
+        }
+
+    }
+
+    .product-description {
+        font-family: 'Archivo';
+        font-style: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #656565;
+        margin: 10px;
+        
+    }
+
+    .product-title-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        .product-title {
+            font-family: 'Archivo';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 37px;
+            color: #333333;
+            margin: 5px 0;
+        }
+
+    }
+
+
+}
+
+.banner-container {
+    padding: 0 23px;
+    margin-bottom: 40px;
+    .banner-card {
+        width: 100%;
+        max-height: 300px;
+        min-height: 200px;
+        height: 30vw;
+        position: relative;
+        .banner-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            img {
+                    height: auto;
+                    min-width: 100%;
+                    position: absolute;
+                    top: -9999px;
+                    bottom: -9999px;
+                    left: -9999px;
+                    right: -9999px;
+                    margin: auto;
+                }
+        }
+        .banner-title {
+            position: absolute;
+            z-index: 99;
+            left: 0;
+            bottom: 0;
+            padding: 10px 20px;
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+.cart-block {
+    background: #FFFFFF;
+    border: 2px solid #E4E4E4;
+    min-width: 250px;
+    margin: 25px 10px;
+    border-radius: 5px;
+    // padding: 20px;
+    .cart-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+        svg {
+            cursor: pointer;
+        }
+    }
+    .cart-content {
+        padding: 20px;
+        padding-top: 0;
+        .cart-empty {
+            text-align: center;
+            font-family: 'Archivo';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 0.07em;
+            margin: 30px;
+        }
+
+        .cart-product-item {
+            margin: 15px 0;
+            .cart-product-title {
+                font-family: 'Archivo';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 32px;
+                margin: 0;
+                color: #333333;
+            }
+            
+            .cart-product-description {
+                font-family: 'Archivo';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                margin: 0;
+                color: #656565;
+            }
+            
+            .quantity-number {
+                width: 100px;
+            }
+
+            .cart-product-price {
+                font-family: 'Archivo';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                color: #656565;
+                margin: 0;
+            }
+    
+            .remove-cart-item {
+                margin-left: 10px;
+                cursor: pointer;
+            }
+            
+            .cart-product-img {
+                width: 100px;
+                height: 60px;
+                position: relative;
+                margin-right: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                .cart-product-img-content {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    img {
+                        min-height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: -9999px;
+                        bottom: -9999px;
+                        left: -9999px;
+                        right: -9999px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+
+
+        .cart-clear-btn {
+            background: #ffffff;
+            font-family: 'Archivo';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 0.07em;
+            outline: none;
+            color: #333333;
+            height: 50px;
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid #333333;
+            margin-top: 15px;
+            position: relative;
+        }
+        .cart-clear-btn:hover {
+            background: #333333;
+            color: #ffffff;
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .cart-product-description {
+        display: none;
+    }
+
+    .cart-product-title {
+        font-size: 18px!important;
+    }
+
+    .cart-product-price {
+        font-size: 16px!important;
+    }
+}
